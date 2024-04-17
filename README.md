@@ -5,7 +5,7 @@ Artifact files for OneDev iocage plugin
 site: https://onedev.io
 github: https://github.com/theonedev/onedev
 
-The plugin script will install OneDen version 10.4.0 from official release 
+The plugin script will install OneDev version 10.4.0 from official release 
 
 To install:
 
