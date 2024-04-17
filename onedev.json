@@ -1,6 +1,7 @@
 {
   "name": "onedev",
   "release": "13.2-RELEASE",
+  "branch": "13.2-RELEASE",
   "artifact": "https://github.com/hellvesper/iocage-plugin-onedev",
   "official": false,
   "plugin_schema": "2",
