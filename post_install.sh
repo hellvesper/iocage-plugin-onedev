@@ -3,8 +3,6 @@
 
 echo "install onedev"
 
-ln -s /usr/local/bin/java* /usr/bin/
-
 echo "Fetch and install OneDev"
 cd /root && fetch https://github.com/hellvesper/iocage-plugin-onedev/releases/download/onedev-10.4.0/onedev-latest.tar.gz && \
 tar -xf onedev-latest.tar.gz && \
