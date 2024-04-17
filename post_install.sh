@@ -36,11 +36,12 @@ mv onedev-latest onedev && \
 
 # echo "Enable nginx service"
 sysrc -f /etc/rc.conf nginx_enable=YES
-service nginx start
 sysrc -f /etc/rc.conf mdnsresponderposix_enable=YES
 sysrc -f /etc/rc.conf mdnsresponderposix_flags="-f /usr/local/etc/mdnsresponder.conf"
-service mdnsresponderposix start
 sysrc -f /etc/rc.conf onedev_enable=YES
+sysrc -f /etc/rc.conf onedev_env="PATH=${PATH}:/usr/local/bin:/usr/local/sbin"
 service onedev start
+service nginx start
+service mdnsresponderposix start
 
 echo "There is no default username and password, register new user with your credentials." >> /root/PLUGIN_INFO
